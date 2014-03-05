@@ -112,8 +112,6 @@
 		C263EA1918C75CA800010728 /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
-				C263EA2218C75CA800010728 /* SSAppDelegate.h */,
-				C263EA2318C75CA800010728 /* SSAppDelegate.m */,
 				C263EA2518C75CA800010728 /* Main.storyboard */,
 				C263EA2818C75CA800010728 /* SSViewController.h */,
 				C263EA2918C75CA800010728 /* SSViewController.m */,
@@ -126,6 +124,8 @@
 		C263EA1A18C75CA800010728 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C263EA2218C75CA800010728 /* SSAppDelegate.h */,
+				C263EA2318C75CA800010728 /* SSAppDelegate.m */,
 				C263EA1B18C75CA800010728 /* CrystalBall-Info.plist */,
 				C263EA1C18C75CA800010728 /* InfoPlist.strings */,
 				C263EA1F18C75CA800010728 /* main.m */,
