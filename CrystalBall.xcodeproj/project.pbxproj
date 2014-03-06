@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C216A8E518C7CAA600FEE933 /* SSCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = C216A8E418C7CAA600FEE933 /* SSCrystalBall.m */; };
 		C263EA1418C75CA800010728 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C263EA1318C75CA800010728 /* Foundation.framework */; };
 		C263EA1618C75CA800010728 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C263EA1518C75CA800010728 /* CoreGraphics.framework */; };
 		C263EA1818C75CA800010728 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C263EA1718C75CA800010728 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C216A8E318C7CAA600FEE933 /* SSCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCrystalBall.h; sourceTree = "<group>"; };
+		C216A8E418C7CAA600FEE933 /* SSCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCrystalBall.m; sourceTree = "<group>"; };
 		C263EA1018C75CA800010728 /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C263EA1318C75CA800010728 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C263EA1518C75CA800010728 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				C263EA2918C75CA800010728 /* SSViewController.m */,
 				C263EA2B18C75CA800010728 /* Images.xcassets */,
 				C263EA1A18C75CA800010728 /* Supporting Files */,
+				C216A8E318C7CAA600FEE933 /* SSCrystalBall.h */,
+				C216A8E418C7CAA600FEE933 /* SSCrystalBall.m */,
 			);
 			path = CrystalBall;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C263EA2A18C75CA800010728 /* SSViewController.m in Sources */,
+				C216A8E518C7CAA600FEE933 /* SSCrystalBall.m in Sources */,
 				C263EA2418C75CA800010728 /* SSAppDelegate.m in Sources */,
 				C263EA2018C75CA800010728 /* main.m in Sources */,
 			);
@@ -461,6 +467,7 @@
 				C263EA4418C75CA800010728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C263EA4518C75CA800010728 /* Build configuration list for PBXNativeTarget "CrystalBallTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +476,7 @@
 				C263EA4718C75CA800010728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

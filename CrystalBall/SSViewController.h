@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class SSCrystalBall;
+
 @interface SSViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
-- (IBAction)buttonPressed;
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) SSCrystalBall *crystalBall;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
+- (void)makePrediction;
+
 
 @end

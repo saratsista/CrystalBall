@@ -16,36 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugx-3r-PXI">
-                                <rect key="frame" x="20" y="139" width="280" height="44"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="OG0-WM-E8C">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ugx-3r-PXI">
+                                <rect key="frame" x="19" y="162" width="280" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="CGd-d2-XEh"/>
+                                    <constraint firstAttribute="width" constant="280" id="wUc-oi-URR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="32"/>
                                 <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXa-wT-XRC">
-                                <rect key="frame" x="20" y="296" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Predict">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9RH-9e-mhA"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OG0-WM-E8C" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2Qh-sH-6Xz"/>
+                            <constraint firstItem="EhA-eM-OLO" firstAttribute="top" secondItem="OG0-WM-E8C" secondAttribute="bottom" id="9SB-Re-8Sq"/>
+                            <constraint firstItem="ugx-3r-PXI" firstAttribute="centerX" secondItem="OG0-WM-E8C" secondAttribute="centerX" constant="-1" id="fe1-h6-r19"/>
+                            <constraint firstAttribute="trailing" secondItem="OG0-WM-E8C" secondAttribute="trailing" id="lZE-hb-Lww"/>
+                            <constraint firstItem="OG0-WM-E8C" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="pEN-kR-y7B"/>
+                            <constraint firstItem="ugx-3r-PXI" firstAttribute="centerY" secondItem="OG0-WM-E8C" secondAttribute="centerY" constant="-42" id="yoX-gD-5mJ"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="predictionLabel" destination="ugx-3r-PXI" id="OpP-Mx-cf7"/>
+                        <outlet property="backgroundImageView" destination="OG0-WM-E8C" id="ELq-Qi-QTz"/>
+                        <outlet property="predictionLabel" destination="ugx-3r-PXI" id="BQt-9a-QIK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="CB00001" width="320" height="568"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
