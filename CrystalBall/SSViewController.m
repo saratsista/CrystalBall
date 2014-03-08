@@ -8,16 +8,25 @@
 
 #import "SSViewController.h"
 #import "SSCrystalBall.h"
+#import <AudioToolbox/AudioToolbox.h>
+
 
 @interface SSViewController ()
 
 @end
 
-@implementation SSViewController
+@implementation SSViewController {
+    SystemSoundID soundEffect;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"crystal_ball" ofType:@"mp3"];
+    NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
+    AudioServicesCreateSystemSoundID(CFBridgingRetain(soundURL), &soundEffect);
+    
 	self.crystalBall = [[SSCrystalBall alloc] init];
     self.backgroundImageView.animationImages = [[NSArray alloc] initWithObjects:
                                                 [UIImage imageNamed:@"CB00001"],
@@ -97,6 +106,8 @@
 - (void)makePrediction {
     [self.backgroundImageView startAnimating];
     self.predictionLabel.text = [self.crystalBall randomPrediction];
+    
+    AudioServicesPlaySystemSound(soundEffect);
     
     [UIView animateWithDuration:6.0 animations:^{
         self.predictionLabel.alpha = 1.0f;

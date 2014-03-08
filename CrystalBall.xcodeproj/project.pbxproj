@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2157D2718CAEB6C000B9F92 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2157D2618CAEB6C000B9F92 /* crystal_ball.mp3 */; };
+		C2157D2B18CAEBD9000B9F92 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2157D2A18CAEBD9000B9F92 /* AudioToolbox.framework */; };
 		C216A8E518C7CAA600FEE933 /* SSCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = C216A8E418C7CAA600FEE933 /* SSCrystalBall.m */; };
 		C263EA1418C75CA800010728 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C263EA1318C75CA800010728 /* Foundation.framework */; };
 		C263EA1618C75CA800010728 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C263EA1518C75CA800010728 /* CoreGraphics.framework */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2157D2618CAEB6C000B9F92 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		C2157D2A18CAEBD9000B9F92 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C216A8E318C7CAA600FEE933 /* SSCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCrystalBall.h; sourceTree = "<group>"; };
 		C216A8E418C7CAA600FEE933 /* SSCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCrystalBall.m; sourceTree = "<group>"; };
 		C263EA1018C75CA800010728 /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2157D2B18CAEBD9000B9F92 /* AudioToolbox.framework in Frameworks */,
 				C263EA1618C75CA800010728 /* CoreGraphics.framework in Frameworks */,
 				C263EA1818C75CA800010728 /* UIKit.framework in Frameworks */,
 				C263EA1418C75CA800010728 /* Foundation.framework in Frameworks */,
@@ -87,6 +92,7 @@
 			children = (
 				C263EA1918C75CA800010728 /* CrystalBall */,
 				C263EA3818C75CA800010728 /* CrystalBallTests */,
+				C2157D2618CAEB6C000B9F92 /* crystal_ball.mp3 */,
 				C263EA1218C75CA800010728 /* Frameworks */,
 				C263EA1118C75CA800010728 /* Products */,
 			);
@@ -104,6 +110,7 @@
 		C263EA1218C75CA800010728 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2157D2A18CAEBD9000B9F92 /* AudioToolbox.framework */,
 				C263EA1318C75CA800010728 /* Foundation.framework */,
 				C263EA1518C75CA800010728 /* CoreGraphics.framework */,
 				C263EA1718C75CA800010728 /* UIKit.framework */,
@@ -236,6 +243,7 @@
 			files = (
 				C263EA2C18C75CA800010728 /* Images.xcassets in Resources */,
 				C263EA1E18C75CA800010728 /* InfoPlist.strings in Resources */,
+				C2157D2718CAEB6C000B9F92 /* crystal_ball.mp3 in Resources */,
 				C263EA2718C75CA800010728 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
